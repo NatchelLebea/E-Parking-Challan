@@ -1,0 +1,141 @@
+.payment-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .payment-container {
+        padding: 10px;
+    }
+
+    .payment-button, .annual-tax-button, .payment-popup button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .logout-button {
+        top: 5px;
+        left: 5px;
+        padding: 3px 7px;
+    }
+}
+
+.payment-slip {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.payment-button,
+.annual-tax-button {
+    padding: 10px 20px;
+    background-color: #00a9ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.payment-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.payment-popup h2 {
+    margin-top: 0;
+}
+
+.payment-popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-icon-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-icon {
+    margin-right: 10px;
+    color: #555;
+}
+
+input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-popup .popup-button,
+.payment-popup .close-button {
+    flex: 1;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.popup-button {
+    background-color: #00a9ff;
+}
+
+.popup-button:hover {
+    background-color: darkblue;
+}
+
+.close-button {
+    background-color: red;
+}
+
+.close-button:hover {
+    background-color: darkred;
+}
+
+.receipt {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.logout-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: #00a9ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover,
+.logout-button:active {
+    background-color: #007BFF; 
+}
+
+.added-to-annual-tax {
+    background-color: green;
+}
+
+.added-to-annual-tax:hover,
+.added-to-annual-tax:active {
+    background-color: darkgreen;
+}

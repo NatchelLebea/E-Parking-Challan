@@ -1,0 +1,42 @@
+.login-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Center the content */
+  }
+  
+  .login-form {
+    margin-bottom: 20px;
+  }
+  
+  .login-input {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .login-button {
+    padding: 15px 30px; /* Increase padding for larger button */
+    font-size: 1.2rem; /* Increase font size */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .payment-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+    margin-top: 20px;
+  }
+  
+  .center-text {
+    text-align: center;
+    font-size: 1.5rem; /* Increase font size for the header */
+    margin-top: 20px; /* Add margin top for spacing */
+  }
+  

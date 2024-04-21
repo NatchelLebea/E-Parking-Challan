@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import StripeCheckout from "react-stripe-checkout";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
@@ -48,9 +49,11 @@ export const PaymentFormPage = () => {
       Challan.
     </h1>
     <div className="payment-container">
+    <Link to="/loginpage">
       <button onClick={handleLogout} className="logout-button">
         <FontAwesomeIcon icon={faSignOutAlt} />
       </button>
+      </Link>
       <h1>Payment Form</h1>
       {!paymentCompleted && (
         <div>
